@@ -8,6 +8,10 @@ get '/katalog' do
     "<h2>Halaman Katalog</h2>"
 end
 
+get '/katalog/:id' do
+    "Katalog >> Produk >> #{params['id']}"
+end
+
 get '/kontak' do
     "<h2>Halaman Kontak</h2>"
 end
