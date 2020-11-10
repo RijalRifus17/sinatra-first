@@ -5,7 +5,9 @@ get '/' do
 end
 
 get '/katalog' do
-    "<h2>Halaman Katalog</h2>"
+    "Daftar Parameter:<br>" + 
+    "kategori=#{params['kategori']}<br>" +
+    "subkategori=#{params['subkategori']}"
 end
 
 get '/katalog/:id' do
